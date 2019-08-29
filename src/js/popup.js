@@ -19,8 +19,8 @@ $(document).ready(function() {
         title: val.title
       });
     });
-    search = new JsSearch.Search("hostname");
-    search.addIndex("hostname");
+    search = new JsSearch.Search("url");
+    search.addIndex("url");
     search.addDocuments(tabData);
   });
 
@@ -34,7 +34,7 @@ $(document).ready(function() {
     $("#results").append(resultHtml);
   });
 
-  $("body").on("click", "a", function(e) {
+  $("body").on("click focus", "a", function(e) {
     let tabId = parseInt(e.target.id);
     chrome.tabs.update(tabId, {active:true});
   });
