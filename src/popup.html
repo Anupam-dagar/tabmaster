@@ -2,18 +2,20 @@
 <html>
 
 <head>
-    <title>Searchbox</title>
-    <link rel="stylesheet" href="./css/popup.css">
+    <title>Tabmaster</title>
 </head>
 
-<body>
-    <h1>Searchbox</h1>
-    <input type="text" name="searchBox" id="searchBox">
-    <div id="results">
-        <ol>
-            
-        </ol>
+<body class="d-flex flex-column">
+    <div class="flex-fill container mt-3">
+        <h4 class="text-center">Tabmaster</h4>
+        <input class="form-control form-control-sm" type="text" name="searchBox" id="searchBox"
+            placeholder="Search for tabs">
+        <br>
+        <div id="results" class="list-group">
+        </div>
     </div>
+
+    <footer class="small text-center mt-3"><a class="alert-link" href="https://github.com/Anupam-dagar" target="_blank">&copy; Anupam Dagar</a></footer>
 </body>
 
 </html>

@@ -12,8 +12,8 @@
   "commands": {
       "_execute_browser_action": {
         "suggested_key": {
-          "default": "Ctrl+Shift+F",
-          "mac": "MacCtrl+Shift+F"
+          "default": "Ctrl+Shift+A",
+          "mac": "MacCtrl+Shift+A"
         },
         "description": "Opens popup.html"
       }
